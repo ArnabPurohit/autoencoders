@@ -1,0 +1,13 @@
+Step 1.	Do hadd
+
+- Every 2D histogram's X axis is the iEta (0-169) and Y axis is the iPhi (0-359) of the ECal barrel crystals.
+- No detector region: iEtamin = 36, iEta_max=169, iPhi_min = 271, iPhi_max=359
+
+Step 2. Analyse
+          - iEta to eta conversion:
+	    	    eta = (iEta-85)*0.0174-0.0174/2
+		    or (iEta - 84.5)*0.0174
+	  - iPhi to phi conversion:
+	    	    phi = iPhi*0.0174-0.0174/2;
+		    or (iPhi - 0.5)*0.0174
+	       
